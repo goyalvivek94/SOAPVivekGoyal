@@ -1,0 +1,214 @@
+2020-12-04 11:57:46,628 WARN  [SoapUI] Missing folder [C:\Users\Vivek\SOAPAPIVivek\ext] for external libraries
+2020-12-04 11:57:46,966 INFO  [DefaultSoapUICore] initialized soapui-settings from [C:\Users\Vivek\soapui-settings.xml]
+2020-12-04 11:57:50,646 INFO  [WsdlProject] Loaded project from [file:/C:/Users/Vivek/SOAPAPIVivek/SDETCustomer-repository-serviceRoshanBatchVivekGoyal-soapui-project.xml]
+2020-12-04 11:57:51,458 INFO  [SoapUITestCaseRunner] Running SoapUI tests in project [SOAPSDETCustomer repository serviceRoshanBatchVivekGoyal]
+2020-12-04 11:57:51,462 INFO  [SoapUITestCaseRunner] Running Project [SOAPSDETCustomer repository serviceRoshanBatchVivekGoyal], runType = SEQUENTIAL
+2020-12-04 11:57:51,507 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [TestCase1]
+2020-12-04 11:57:51,517 INFO  [SoapUITestCaseRunner] running step [NewCustomer]
+2020-12-04 11:57:53,598 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2020-12-04 11:57:53,598 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
+2020-12-04 11:57:53,599 INFO  [SoapUITestCaseRunner] Assertion [Response SLA] has status VALID
+2020-12-04 11:57:53,599 INFO  [SoapUITestCaseRunner] Assertion [XPath Match] has status VALID
+2020-12-04 11:57:53,599 INFO  [SoapUITestCaseRunner] Assertion [Invalid HTTP Status Codes] has status VALID
+2020-12-04 11:57:53,600 INFO  [SoapUITestCaseRunner] Assertion [Valid HTTP Status Codes] has status VALID
+2020-12-04 11:57:53,600 INFO  [SoapUITestCaseRunner] running step [GetList]
+2020-12-04 11:58:07,737 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2020-12-04 11:58:07,738 INFO  [SoapUITestCaseRunner] Assertion [Invalid HTTP Status Codes] has status VALID
+2020-12-04 11:58:07,738 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
+2020-12-04 11:58:07,742 INFO  [SoapUITestCaseRunner] running step [Property Transfer]
+2020-12-04 11:58:07,782 INFO  [SoapUITestCaseRunner] running step [GetByID]
+2020-12-04 11:58:08,601 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2020-12-04 11:58:08,603 INFO  [SoapUITestCaseRunner] Assertion [Invalid HTTP Status Codes] has status VALID
+2020-12-04 11:58:08,605 INFO  [SoapUITestCaseRunner] Assertion [Valid HTTP Status Codes] has status VALID
+2020-12-04 11:58:08,608 INFO  [SoapUITestCaseRunner] Assertion [Response SLA] has status VALID
+2020-12-04 11:58:08,610 INFO  [SoapUITestCaseRunner] running step [Property Transfer1]
+2020-12-04 11:58:08,642 INFO  [SoapUITestCaseRunner] running step [DeleteByID]
+2020-12-04 11:58:09,673 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2020-12-04 11:58:09,674 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
+2020-12-04 11:58:09,674 INFO  [SoapUITestCaseRunner] Assertion [Invalid HTTP Status Codes] has status VALID
+2020-12-04 11:58:09,678 INFO  [SoapUITestCaseRunner] Assertion [Response SLA] has status VALID
+2020-12-04 11:58:09,679 INFO  [SoapUITestCaseRunner] Assertion [Valid HTTP Status Codes] has status VALID
+2020-12-04 11:58:09,682 INFO  [SoapUITestCaseRunner] Assertion [XPath Match] has status VALID
+2020-12-04 11:58:09,689 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [TestCase1], time taken: 18113ms, status: FINISHED
+2020-12-04 11:58:09,702 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [TestCase1]
+2020-12-04 11:58:09,702 INFO  [SoapUITestCaseRunner] running step [Groovy Script]
+2020-12-04 11:58:10,387 INFO  [log] TestCase1
+2020-12-04 11:58:10,400 INFO  [log] TestSuite2
+2020-12-04 11:58:10,406 INFO  [log] <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:def="http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1">
+   <soap:Header/>
+   <soap:Body>
+      <def:customerCustomerRepositoryV1SaveRequest>
+         <customer>
+            <!--email should be unique for each request-->
+            <email>johndoervtd@gmail.com</email>
+            <firstname>John</firstname>
+            <lastname>Doe</lastname>
+            <dob>1990-05-29</dob>
+            <addresses>
+               <item>
+                  <region>
+                     <!--enter valid region code-->
+                     <regionCode>KA</regionCode>
+                     <region>Karnataka</region>
+                  </region>
+                  <!--enter valid country id-->
+                  <countryId>IN</countryId>
+                  <street>
+                     <item>#55, 1 st Main Road</item>
+                  </street>
+                  <telephone>+91 9876543210</telephone>
+                  <postcode>560023</postcode>
+                  <city>Bengaluru</city>
+                  <firstname>John</firstname>
+                  <lastname>Doe</lastname>
+                  <defaultShipping>true</defaultShipping>
+                  <defaultBilling>true</defaultBilling>
+               </item>
+            </addresses>
+         </customer>
+      </def:customerCustomerRepositoryV1SaveRequest>
+   </soap:Body>
+</soap:Envelope>
+2020-12-04 11:58:10,476 INFO  [log] johndoervtd@gmail.com
+2020-12-04 11:58:10,477 INFO  [log] John
+2020-12-04 11:58:10,478 INFO  [log] Doe
+2020-12-04 11:58:10,506 INFO  [log] <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:def="http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1">
+   <soap:Header/>
+   <soap:Body>
+      <def:customerCustomerRepositoryV1SaveRequest>
+         <customer>
+            <!--email should be unique for each request-->
+            <email>johndoervtd@gmail.com</email>
+            <firstname>John</firstname>
+            <lastname>Doe</lastname>
+            <dob>1990-05-29</dob>
+            <addresses>
+               <item>
+                  <region>
+                     <!--enter valid region code-->
+                     <regionCode>KA</regionCode>
+                     <region>Karnataka</region>
+                  </region>
+                  <!--enter valid country id-->
+                  <countryId>IN</countryId>
+                  <street>
+                     <item>#55, 1 st Main Road</item>
+                  </street>
+                  <telephone>+91 9876543210</telephone>
+                  <postcode>560023</postcode>
+                  <city>Bengaluru</city>
+                  <firstname>John</firstname>
+                  <lastname>Doe</lastname>
+                  <defaultShipping>true</defaultShipping>
+                  <defaultBilling>true</defaultBilling>
+               </item>
+            </addresses>
+         </customer>
+      </def:customerCustomerRepositoryV1SaveRequest>
+   </soap:Body>
+</soap:Envelope>
+2020-12-04 11:58:11,629 INFO  [log] <env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:ns1="http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1">
+   <env:Body>
+      <ns1:customerCustomerRepositoryV1SaveResponse>
+         <result>
+            <id>6468</id>
+            <groupId>1</groupId>
+            <defaultBilling>4824</defaultBilling>
+            <defaultShipping>4824</defaultShipping>
+            <createdAt>2020-12-04 06:28:18</createdAt>
+            <updatedAt>2020-12-04 06:28:18</updatedAt>
+            <createdIn>Default Store View</createdIn>
+            <dob>1990-05-29</dob>
+            <email>johndoervtd@gmail.com</email>
+            <firstname>John</firstname>
+            <lastname>Doe</lastname>
+            <storeId>1</storeId>
+            <websiteId>1</websiteId>
+            <addresses>
+               <item>
+                  <id>4824</id>
+                  <customerId>6468</customerId>
+                  <region>
+                     <regionCode>Karnataka</regionCode>
+                     <region>Karnataka</region>
+                     <regionId>0</regionId>
+                  </region>
+                  <regionId>0</regionId>
+                  <countryId>IN</countryId>
+                  <street>
+                     <item>#55, 1 st Main Road</item>
+                  </street>
+                  <telephone>+91 9876543210</telephone>
+                  <postcode>560023</postcode>
+                  <city>Bengaluru</city>
+                  <firstname>John</firstname>
+                  <lastname>Doe</lastname>
+                  <defaultShipping>true</defaultShipping>
+                  <defaultBilling>true</defaultBilling>
+               </item>
+            </addresses>
+            <disableAutoGroupChange>0</disableAutoGroupChange>
+            <extensionAttributes>
+               <isSubscribed>false</isSubscribed>
+            </extensionAttributes>
+         </result>
+      </ns1:customerCustomerRepositoryV1SaveResponse>
+   </env:Body>
+</env:Envelope>
+2020-12-04 11:58:11,694 INFO  [log] 6468
+2020-12-04 11:58:49,325 INFO  [log] <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:def="http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1">
+   <soap:Header/>
+   <soap:Body>
+      <def:customerCustomerRepositoryV1GetByIdRequest>
+         <customerId>6466</customerId>
+      </def:customerCustomerRepositoryV1GetByIdRequest>
+   </soap:Body>
+</soap:Envelope>
+2020-12-04 11:58:49,328 INFO  [log] <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:def="http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1">
+   <soap:Header/>
+   <soap:Body>
+      <def:customerCustomerRepositoryV1GetByIdRequest>
+         <customerId>6468</customerId>
+      </def:customerCustomerRepositoryV1GetByIdRequest>
+   </soap:Body>
+</soap:Envelope>
+2020-12-04 11:58:52,843 INFO  [log] <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:def="http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1">
+   <soap:Header/>
+   <soap:Body>
+      <def:customerCustomerRepositoryV1DeleteByIdRequest>
+         <customerId>6466</customerId>
+      </def:customerCustomerRepositoryV1DeleteByIdRequest>
+   </soap:Body>
+</soap:Envelope>
+2020-12-04 11:58:52,848 INFO  [log] <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:def="http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1">
+   <soap:Header/>
+   <soap:Body>
+      <def:customerCustomerRepositoryV1DeleteByIdRequest>
+         <customerId>6468</customerId>
+      </def:customerCustomerRepositoryV1DeleteByIdRequest>
+   </soap:Body>
+</soap:Envelope>
+2020-12-04 11:58:54,040 INFO  [SoapUITestCaseRunner] running step [NewCustomer]
+2020-12-04 11:58:55,084 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2020-12-04 11:58:55,091 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
+2020-12-04 11:58:55,099 INFO  [SoapUITestCaseRunner] Assertion [Invalid HTTP Status Codes] has status VALID
+2020-12-04 11:58:55,100 INFO  [SoapUITestCaseRunner] Assertion [Valid HTTP Status Codes] has status VALID
+2020-12-04 11:58:55,100 INFO  [SoapUITestCaseRunner] Assertion [XPath Match] has status VALID
+2020-12-04 11:58:55,101 INFO  [SoapUITestCaseRunner] running step [GetList]
+2020-12-04 11:59:19,918 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2020-12-04 11:59:19,919 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
+2020-12-04 11:59:19,919 INFO  [SoapUITestCaseRunner] Assertion [Invalid HTTP Status Codes] has status VALID
+2020-12-04 11:59:19,919 INFO  [SoapUITestCaseRunner] Assertion [Valid HTTP Status Codes] has status VALID
+2020-12-04 11:59:19,920 INFO  [SoapUITestCaseRunner] running step [Copy of Property Transfer]
+2020-12-04 11:59:19,923 INFO  [SoapUITestCaseRunner] running step [GetByID]
+2020-12-04 11:59:20,792 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2020-12-04 11:59:20,792 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
+2020-12-04 11:59:20,792 INFO  [SoapUITestCaseRunner] Assertion [Invalid HTTP Status Codes] has status VALID
+2020-12-04 11:59:20,793 INFO  [SoapUITestCaseRunner] Assertion [Valid HTTP Status Codes] has status VALID
+2020-12-04 11:59:20,793 INFO  [SoapUITestCaseRunner] Assertion [XPath Match] has status VALID
+2020-12-04 11:59:20,793 INFO  [SoapUITestCaseRunner] running step [Copy of Property Transfer1]
+2020-12-04 11:59:20,797 INFO  [SoapUITestCaseRunner] running step [DeleteByID]
+2020-12-04 11:59:21,960 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2020-12-04 11:59:21,960 INFO  [SoapUITestCaseRunner] Assertion [XPath Match] has status VALID
+2020-12-04 11:59:21,961 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [TestCase1], time taken: 72224ms, status: FINISHED
+2020-12-04 11:59:21,963 INFO  [SoapUITestCaseRunner] Project [SOAPSDETCustomer repository serviceRoshanBatchVivekGoyal] finished with status [FINISHED] in 90493ms
